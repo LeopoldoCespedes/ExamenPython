@@ -71,6 +71,24 @@ def split(diccionario):
   whiteAndRed = [whiteDict,redDict]
   print(whiteAndRed)
   return whiteAndRed
+def reduce(diccionario,atributo):
+  lista = []
+  for i in diccionario[0]:
+    if(diccionario[0].get(i).get(atributo) == None):
+      print("error")
+    else:
+      lista.append(diccionario[0].get(suma).get(atributo == None))
+    suma = suma+1
+  for i in diccionario[1]:
+    if(diccionario[1].get(i).get(atributo) == None):
+      print("error")
+    else:
+      lista.append(diccionario[1].get(i).get(atributo))
+    suma2 = suma2 +1 
+  print(lista)
+  return lista
+  
+
 
  
  
