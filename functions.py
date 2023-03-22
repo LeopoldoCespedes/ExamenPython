@@ -1,8 +1,9 @@
+import csv
 def read_data(fichero):
- f = open(fichero, mode="rb")
- linea = f.readline()
- while linea != "" :
-     print("he leído: " + linea)
-     linea = f.readline()
- f.close()
-read_data("winequality.csv")
+ with open(fichero, 'r') as file:
+    reader = csv.reader(file)
+    dic = {1:{}}
+    for row in reader:
+        
+        print(row)
+read_data('winequality.csv')
