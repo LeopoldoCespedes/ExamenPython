@@ -31,9 +31,6 @@ Returns:
             'quality':'6'
             }
     }
-    dic1 = dic[1]
-    res = dic.get(1)
-    print(res)
     #se empieza a leer cada linea representada
     #por suma, linea 1 suma = 1
     suma = 1
@@ -57,5 +54,23 @@ Returns:
     #se devuelve el diccionario 
     return dic 
 def split(diccionario):
-  "ola"
+  whiteDict = {}
+  redDict = {}
+  suma = 0
+  for i in diccionario:
+     res1 = diccionario.get(i)
+     res = res1.get('type')
+     if(res == 'white'):
+       whiteDict.update({suma:i})
+       
+
+     if(res == 'red'):
+       redDict.update({suma:i})
+       
+     suma = suma+1
+  whiteAndRed = [whiteDict,redDict]
+  print(whiteAndRed)
+  return whiteAndRed
+
+ 
  
